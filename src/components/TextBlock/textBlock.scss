@@ -1,0 +1,14 @@
+@use 'sass:math';
+@import '../../assets/scss/abstracts/variables.scss';
+
+.text-block {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    p {
+        margin-bottom: 2rem;
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.975;
+    }
+}

@@ -1,0 +1,53 @@
+@use 'sass:math';
+@import '../../assets/scss/abstracts/variables.scss';
+
+.blockquote {
+    position: relative;
+    margin-bottom: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &::before {
+        content: '\201C';
+        position: absolute;
+        color: rgba($whitesmoke, 0.2);
+        font-family: 'Times New Roman';
+        font-size: 10rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    &::before {
+        top: 2rem;
+        left: 2rem;
+    }
+    // &::after {
+    //     bottom: 2rem;
+    //     right: 2rem;
+    //     transform: rotate(180deg);
+    // }
+
+    &--primary {
+        background: $rose;
+        color: $whitesmoke;
+    }
+    &--secondary {
+        background: $coral;
+    }
+    &--tertiary {
+        background: $peach;
+    }
+
+    &__quote {
+        margin: 0 0 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__author {
+        font-style: italic;
+        text-align: center;
+        &::before {
+            content: '—';
+            margin-right: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.button {
+    display: inline-flex;
+    padding: 0.75rem 1.25rem;
+    background: $white;
+    &:hover {
+        background: darken($white,10%);
+        text-decoration: none;
+    }
+
+    [class*="--primary"] & {
+        background: $peach;
+        color: $violet;
+        &:hover {
+            color: darken($violet, 5%);
+            background: darken($peach, 5%);
+        }
+    }
+
+    [class*="--peach"] & {
+        background: $violet;
+        color: $peach;
+        &:hover {
+            background: darken($violet, 5%);
+            color: darken($peach, 5%);
+        }
+    }
+}

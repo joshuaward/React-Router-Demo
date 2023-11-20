@@ -1,0 +1,26 @@
+@use 'sass:math';
+@import '../../assets/scss/abstracts/variables.scss';
+
+.loader {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect {
+	fill: $violet;
+}

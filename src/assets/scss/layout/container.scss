@@ -1,0 +1,7 @@
+.container {
+    @include container;
+
+    &--small {
+        @include container($max: $maxWidthSm);
+    }
+}
